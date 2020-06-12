@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Egg Catcher</title>
+  </head>
+  <body>
+    <!-- main container -->
+    <div id="container" class="h-100 container-fluid">
+
+        <div class="h-100">  
+            <!-- start massege         -->
+            <div class="col-md-6">
+                <div class="game-start">
+                    <h1>Happy Eggs</h1>
+                    <button id="play">Play</button>
+                </div>
+            </div>
+            <!-- game over massege -->
+            <div class="col-md-6">
+                <div class="game-over">
+                    <h1>Happy Eggs</h1>
+                    <h2 id="play-score">  </h2>
+                    <button id="play-again">Play Again</button>
+                </div>
+            </div>
+
+            <!-- game content -->
+
+            <div class="content h-100">
+                <!-- start statusBar -->
+                <div id="statusbar">
+                    <div>Score <span id="score">0</span></div>
+                    <div>Life <span id="life">10</span></div>
+                </div>
+
+                <!-- hens & eggs -->
+                <div class="col-sm-8 h-100 m-auto p-0">
+                    <!-- hens -->
+                    <div class="hens">
+                        <div class="hen" id="hen1"><img src="imgs/Happy_hen.svg" alt="hen"></div>
+                        <div class="hen" id="hen2"><img src="imgs/Happy_hen.svg" alt="hen"></div>
+                        <div class="hen" id="hen3"><img src="imgs/Happy_hen.svg" alt="hen"></div>
+                    </div>
+                    <!-- eggs & break eggs -->
+                    <div class="eggs">
+                        <div id="egg1" data-brokeneg="1" class="egg"><img src="imgs/Happy_Egg.svg" alt="egg"></div>
+                        <div id="egg2" data-brokeneg="2" class="egg"><img src="imgs/Happy_Egg.svg" alt="egg"></div>
+                        <div id="egg3" data-brokeneg="3" class="egg"><img src="imgs/Happy_Egg.svg" alt="egg"></div>
+                    </div>
+
+                    <div id="brokeneg1" class="brokenegg"><img src="imgs/Broken_Egg.svg" alt="brokenegg"></div>
+                    <div id="brokeneg2" class="brokenegg"><img src="imgs/Broken_Egg.svg" alt="brokenegg"></div>
+                    <div id="brokeneg3" class="brokenegg"><img src="imgs/Broken_Egg.svg" alt="brokenegg"></div>
+                </div>          
+
+
+
+            </div>
+        </div>    
+        <!-- bassket -->
+        <div id="basket">
+            <span id="basketScore">0</span>
+        </div>
+        
+        <!-- floor -->
+        <div id="floor"></div>
+    </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="collision.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
